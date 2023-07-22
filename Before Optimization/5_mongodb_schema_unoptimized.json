@@ -1,0 +1,51 @@
+{
+    "students" : {
+        "_id" : "objectid",
+        "name" : "string",
+        "username" : "string",
+        "password" : "string"
+    },
+    "instructors" : {
+        "_id" : "objectid",
+        "name" : "string",
+        "username" : "string",
+        "password" : "string"
+    },
+    "courses" : {
+        "_id" : "objectid",
+        "id" : "int32",
+        "name" : "string",
+        "instructor_username" : "int32",
+        "cost" : "int32",
+        "rate" : "int32"
+    },
+    "videos" :{
+        "_id" : "objectid",
+        "id" : "int32",
+        "name" : "string",
+        "course_id" : "int32",
+        "link" : "string"
+    },
+    "quizzes" : {
+        "_id" : "objectid",
+        "id" : "int32",
+        "name" : "string",
+        "course_id" : "int32"
+    },
+    "students_courses":{
+        "_id" : "objectid",
+        "student_id" : "int32",
+        "course_id" : "int32"
+    },
+    "students_videos":{
+        "_id" : "objectid",
+        "student_id" : "int32",
+        "video_id" : "int32"
+    },
+    "students_quizzes":{
+        "_id" : "objectid",
+        "student_id" : "int32",
+        "quiz_id" : "int32",
+        "score" : "int32"
+    }
+}
